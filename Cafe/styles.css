@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+@import url("https://fonts.googleapis.com/css?family=Inter");
+
+html {
+  text-align: center;
+  font-size: large;
+  background: white;
+  font-family: Montserrat;
+}
+
+#CafeLogo {
+  width: 100px;
+  height: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+#CafeName {
+  margin-top: 0px;
+  font-size: 40px;
+  font-weight: 2000;
+  margin-bottom: 4px;
+}
+
+
+.Gifs img {
+  width: 550px;
+  height: 300px;
+  border: 0;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  margin: 5px;
+}
+
+.Gifs {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 10px;
+}
+
+#CoffeeGif {
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.479);
+}
+
+#BreakfastGif {
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.479);
+}
+
+#DessertGif {
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.479);
+}
+
+.ItemButton {
+  background-color: #FFFFFF;
+  width: 550px;
+  border: 0;
+  border-radius: .5rem;
+  box-sizing: border-box;
+  color: #111827;
+  font-family: Inter;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1.25rem;
+  padding: .75rem 1rem;
+  text-align: center;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.ItemButton:hover {
+  transform: scale(1.07);
+  transition: linear ease-in;
+  transition-duration: 0.2s;
+}
+
+.ItemButton:active {
+  background-color: rgb(249,250,251);
+}
+
+.ItemButton:focus {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
+.ItemButton:focus-visible {
+  box-shadow: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.NavButton {
+  position: relative;
+  font-size: 30px;
+  text-decoration: none;
+  padding: 1em 2.5em;
+  display: inline-block;
+  border-radius: 0;
+  transition: all .2s;
+  border: none;
+  font-family: Montserrat;
+  font-weight: 500;
+  color: black;
+  background-color: white;
+  margin-bottom: 10px;
+}
+.NavButton:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.NavButton:active {
+  transform: translateY(-1px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.NavButton::after {
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  border-radius: 100px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: all .4s;
+}
+
+.NavButton::after {
+  background-color: #fff;
+}
+
+.NavButton:hover::after {
+  transform: scaleX(1.4) scaleY(1.6);
+  opacity: 0;
+}
+
+#BottomHeader {
+  font-family: Inter;
+  font-size: 40px;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+#BottomHeaderText {
+  font-family: Inter;
+  font-size: 18px;
+}
+

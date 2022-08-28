@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css?family=Inter");
+
+.CoffeePage {
+}
+
+#CoffeePage_MainHeader, #BreakfastPage_MainHeader, #DessertPage_MainHeader {
+  text-align: center;
+  font-size: 60px;
+  font-family: Inter;
+  font-weight: 600;
+  margin-bottom: 0px;
+  opacity: 0;
+  animation: fadeIn1 1s forwards;
+}
+
+#CoffeePage_Desc, #BreakfastPage_Desc, #DessertPage_Desc {
+  font-size:25px;
+  font-family: Inter;
+  border: 8px solid;
+  padding: 10px;
+  border-image: linear-gradient(45deg, #FFFFFF, black) 40;
+  display: inline-block;
+  position: relative;
+  right: -385px;
+  opacity: 0;
+  animation: fadeIn1 2s forwards;
+  animation-delay: 2s;
+}
+
+.CoffeePage_Items, .BreakfastPage_Items, .DessertPage_Items {
+  position: relative;
+  right: -385px;
+  font-size:25px;
+  font-family: Inter;
+  font-weight: 700;
+  gap: 10px;
+  opacity: 0;
+  animation: fadeIn 2s forwards;
+  animation-delay: 2s;
+}
+
+.CoffeePage_Gifs img {
+  width: 550px;
+  height: 300px;
+  border: 0;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  margin: 3px;
+}
+
+.BreakfastPage_Gifs img {
+  width: 550px;
+  height: 300px;
+  border: 0;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  margin: 3px;
+}
+
+.DessertPage_Gifs img {
+  width: 550px;
+  height: 300px;
+  border: 0;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  margin: 3px;
+}
+
+.CoffeePage_Gifs, .BreakfastPage_Gifs, .DessertPage_Gifs {
+  margin: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 10px;
+  animation: blurFade 3s forwards;
+  animation-duration: 11s;
+}
+
+a {
+  text-decoration: none;
+}
+
+.btn {
+  align-items: center;
+  appearance: none;
+  background-color: #fff;
+  border: 1px solid #dbdbdb;
+  border-radius: .375em;
+  box-shadow: none;
+  box-sizing: border-box;
+  color: #363636;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: Inter;
+  font-size: 1rem;
+  height: 2.5em;
+  justify-content: center;
+  line-height: 1.5;
+  padding: calc(.5em - 1px) 1em;
+  position: relative;
+  text-align: center;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: top;
+  white-space: nowrap;
+}
+
+.btn:active {
+  border-color: #4a4a4a;
+  outline: 0;
+}
+
+.btn:focus {
+  border-color: #485fc7;
+  outline: 0;
+}
+
+.btn:hover {
+  border-color: #b5b5b5;
+}
+
+.btn:focus:not(:active) {
+  box-shadow: rgba(72, 95, 199, .25) 0 0 0 .125em;
+}
+
+@keyframes blurFade {
+  from {filter: blur(8px)} to {filter: blur(0px)};
+}
+
+@keyframes fadeIn1 {
+  from {opacity: 0} to {opacity: 1};
+}
+
+@keyframes fadeIn {
+  from {opacity: 0} to {opacity: 1};
+}
+
